@@ -38,10 +38,39 @@
 
    <section class="slide" id="next-slide">
 	<h2>What is node.js</h2>
+        <div>
+	  <div style="float:left; width:70% ">
+            <p>
+		Node is an open source toolkit for developing server side applications based on the V8 JavaScript engine. Like Node, V8 is written in C++ and is mostly known for being used in Google Chrome.
+Node is part of the Server Side JavaScript environnement and extends the JavaScript API to offer usual server side functionalities. Node's base API can be extended by using the <a href="http://www.commonjs.org>CommonJS</a> module system.
+Node has be created by Ryan Dahl in February 2009 and has since become very popular. It’s spirit is similar to <a href="http://twistedmatrix.com/trac/">Twisted</a> for Python and <a href="http://rubyeventmachine.com/">EventMachine</a> for Ruby.
+The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company employing Ryan Dalh) who lunched a cloud hosting service for node applications (<a href="https://no.de/">no.de</a>).
+           </p>
+         </div>
+        <div style="float:right; width:30%">
+          <img src="nodejsarch.png " />
+       </div>
+       </div>
    </section>
 
    <section class="slide" id="last-slide">
-	<h2>Where did node.js come from</h2>
+	<h2>What are the building blocks of Node</h2>
+        <h3>Single Threaded</h3>
+	<ul>
+	   <li class="slide" id="extensions-goto">
+               Threads are complex programming constructs, and consume approximately 2mb per thread
+	   </li>
+           <li class="slide">
+              <a href="http://blog.webfaction.com/a-little-holiday-present">Benchmarks</a> have shown that single threaded evented I/O based platforms such as <a href="http://nginx.org/en/">ngenix</a> out-perform multi-threaded platforms such as <a href="http://httpd.apache.org/">apache</a>
+          </li>
+          <li class="slide">
+            Single threaded platforms leveraging <a href="http://en.wikipedia.org/wiki/Asynchronous_I/O">Evented I/O</a> or asynch I/O operations are optimal 
+          </li>
+       </ul>
+      <h3>Event Loop</h3>
+      <ul>
+       <li class="slide">
+     </ul>
    </section>
 
    <p class="deck-status">
