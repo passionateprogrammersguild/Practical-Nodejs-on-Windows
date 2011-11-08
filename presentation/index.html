@@ -7,10 +7,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Getting Started with deck.js</title>
+	<title>node.js - An Introduction with Codez</title>
 	
-	<meta name="description" content="A jQuery library for modern HTML presentations">
-	<meta name="author" content="Caleb Troughton">
+	<meta name="description" content="A presentation on the basics of node.js">
+	<meta name="author" content="Michael Mann">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 	
 	<!-- Core and extension CSS files -->
@@ -42,9 +42,11 @@
 	  <div style="float:left; width:70% ">
             <p>
 		Node is an open source toolkit for developing server side applications based on the V8 JavaScript engine. Like Node, V8 is written in C++ and is mostly known for being used in Google Chrome.
-Node is part of the Server Side JavaScript environnement and extends the JavaScript API to offer usual server side functionalities. Node's base API can be extended by using the <a href="http://www.commonjs.org>CommonJS</a> module system.
-Node has be created by Ryan Dahl in February 2009 and has since become very popular. It’s spirit is similar to <a href="http://twistedmatrix.com/trac/">Twisted</a> for Python and <a href="http://rubyeventmachine.com/">EventMachine</a> for Ruby.
-The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company employing Ryan Dalh) who lunched a cloud hosting service for node applications (<a href="https://no.de/">no.de</a>).
+Node is part of the Server Side JavaScript environnement and extends the JavaScript API to offer usual server side functionalities. Node's base API can be extended by using the <a href="http://www.commonjs.org">CommonJS</a> module system.</p>
+
+<p>
+Node was created by Ryan Dahl in February 2009 and has since become very popular. It&#39;s spirit is similar to <a href="http://twistedmatrix.com/trac/">Twisted</a> for Python and <a href="http://rubyeventmachine.com/">EventMachine</a> for Ruby.
+The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company employing Ryan Dahl) who lunched a cloud hosting service for node applications (<a href="https://no.de/">no.de</a>).
            </p>
          </div>
         <div style="float:right; width:30%">
@@ -69,7 +71,15 @@ The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company e
        </ul>
       <h3>Event Loop</h3>
       <ul>
-       <li class="slide">
+       <li class="slide">Asynch I/O programming model</li>
+       <li class="slide">Uses <a href="http://software.schmorp.de/pkg/libeio.html">libev</a> - A Unix event loop library</li>
+       <li class="slide">Uses <a href="https://github.com/joyent/libuv">libuv</a> - An abstraction over I/O Completion ports on windows and libev on Unix
+     </ul>
+     <h3>The Module System</h3>
+     <ul>
+        <li class="slide">Use npm to install and uninstall modules</li>
+        <li class="slide">Can be written in C, C++ or javascript</li>
+        <li class="slide">Supports CommonJS compatible modules</li>
      </ul>
    </section>
 
