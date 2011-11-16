@@ -14,6 +14,7 @@
     <AssemblyName>ZombieAction</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
+    <JasmineHome Condition=" '$(JasmineHome)' == '' ">c:\tools\node_modules\jasmine-node\bin</JasmineHome>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -80,6 +81,8 @@
     <Content Include="assets\graphics\styles\weather.css" />
     <Content Include="Global.asax" />
     <None Include="views\home.cshtml" />
+    <Content Include="node_modules\zombie.js" />
+    <Content Include="spec\zombie_spec.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -129,4 +132,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <Target Name="run-js-tests">
+    <Exec Command="node $(JasmineHome)\jasmine-node --verbose spec"/>
+  </Target>
 </Project>
