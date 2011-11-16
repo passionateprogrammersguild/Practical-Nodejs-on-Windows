@@ -132,7 +132,36 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="run-js-tests">
+  <Target Name="run-js-tests"
+  DependsOnTargets="CopyTestFilesToNodeModuleFolder">
     <Exec Command="node $(JasmineHome)\jasmine-node --verbose spec"/>
+  </Target>
+  
+  <Target Name="CopyTestFilesToNodeModuleFolder">
+    <RemoveDir Directories="node_modules" />
+            
+    <MakeDir Directories="node_modules" />
+    
+    <ReadLinesFromFile
+            File="./assets/scripts/zombie.js" >
+            <Output
+                TaskParameter="Lines"
+                ItemName="ZombieJSFile"/>
+    </ReadLinesFromFile>
+    
+    <ReadLinesFromFile
+            File="./assets/scripts/module.js" >
+            <Output
+                TaskParameter="Lines"
+                ItemName="ModuleJSFile"/>
+    </ReadLinesFromFile>
+    
+    
+    
+    <WriteLinesToFile
+            File="./node_modules/zombie.js"
+            Lines="@(ZombieJsFile);@(ModuleJsFile)"
+            Overwrite="true"
+            Encoding="ASCII"/>
   </Target>
 </Project>
