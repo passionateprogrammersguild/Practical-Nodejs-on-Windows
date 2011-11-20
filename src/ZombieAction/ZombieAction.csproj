@@ -76,12 +76,12 @@
   <ItemGroup>
     <Content Include="assets\graphics\ajax-loader.gif" />
     <Content Include="assets\graphics\Zombie.jpg" />
+    <Content Include="assets\scripts\module.js" />
     <Content Include="assets\scripts\zombie.js" />
     <Content Include="assets\scripts\jquery-1.5.2.min.js" />
     <Content Include="assets\graphics\styles\weather.css" />
     <Content Include="Global.asax" />
     <None Include="views\home.cshtml" />
-    <Content Include="node_modules\zombie.js" />
     <Content Include="spec\zombie_spec.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -132,36 +132,15 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="run-js-tests"
-  DependsOnTargets="CopyTestFilesToNodeModuleFolder">
-    <Exec Command="node $(JasmineHome)\jasmine-node --verbose spec"/>
+  <Target Name="run-js-tests" DependsOnTargets="CopyTestFilesToNodeModuleFolder">
+    <Exec Command="node $(JasmineHome)\jasmine-node --verbose spec" />
   </Target>
-  
   <Target Name="CopyTestFilesToNodeModuleFolder">
     <RemoveDir Directories="node_modules" />
-            
     <MakeDir Directories="node_modules" />
-    
-    <ReadLinesFromFile
-            File="./assets/scripts/zombie.js" >
-            <Output
-                TaskParameter="Lines"
-                ItemName="ZombieJSFile"/>
+    <ReadLinesFromFile File="./assets/scripts/zombie.js">
+      <Output TaskParameter="Lines" ItemName="ItemsFromFile" />
     </ReadLinesFromFile>
-    
-    <ReadLinesFromFile
-            File="./assets/scripts/module.js" >
-            <Output
-                TaskParameter="Lines"
-                ItemName="ModuleJSFile"/>
-    </ReadLinesFromFile>
-    
-    
-    
-    <WriteLinesToFile
-            File="./node_modules/zombie.js"
-            Lines="@(ZombieJsFile);@(ModuleJsFile)"
-            Overwrite="true"
-            Encoding="ASCII"/>
+    <WriteLinesToFile File="./node_modules/zombie.js" Lines="@(ItemsFromFile);module.exports = (function () {return {CreateZombie: function (name) {return new Zombie(name);}};}())" Overwrite="true" Encoding="Unicode" />
   </Target>
 </Project>

@@ -24,6 +24,21 @@
 	<link rel="stylesheet" href="../lib/extensions/navigation/deck.navigation.css">
 	<link rel="stylesheet" href="../lib/extensions/status/deck.status.css">
 	<link rel="stylesheet" href="../lib/extensions/hash/deck.hash.css">
+    <style>
+    #abount-me-footer {
+        position:absolute;
+        bottom:0;
+        width:100%;        
+        height:120px;   /* Height of the footer */   
+    }
+    
+    #abount-me-footer div ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 1em;
+        text-indent: -1em;
+    }
+    </style>
 	
 	
 	<!-- Custom CSS just for this page -->
@@ -35,7 +50,79 @@
    <section class="slide" id="title-slide">
 	<h1>Practical node.js on Windows</h1>
    </section>
+   <section class="slide">
+    <h2>Who am I</h2> 
+    <div>     
+        <img  src="me.jpg" alt="Michael E. Mann"/>
+        <h3 style="text-align:center;">This is Me</h3>
+    </div>
+    <div style="margin-top:50px;">     
+        <img  src="meontwitter.jpg" alt="Michael E. Mann"/>
+        <h3 style="text-align:center;"><a href="https://twitter.com/#!/StarsUponTharz">@StarsUponTharz</a> on twitter</h3>
+    </div>
+    <div id="abount-me-footer">
+        <div style="float:left">
+            <ul>
+                <li>Michael E. Mann</li>
+                <li>Sr. Software Engineer</li>
+                <li>Redrocket Solutions</li>
+            </ul>
+        </div>    
+        <div style="float:right">
+            <ul>
+                <li>Email: <a mailto="mmann2943@gmail.com">mmann2943@gmail.com</a></li>
+                <li>Blog: <a href="http://passionateprogrammersguild.com">http://passionateprogrammersguild.com</a></li>
+                <li>Github: <a href="https://github.com/passionateprogrammersguild">https://github.com/passionateprogrammersguild</a></li>
+            </ul>
+        </div>
+    </div>
+    
+   </section>
+   <section class="slide">
+    <img  src="continuousLearner.jpg" alt="Continuous Learner"/>
+    <h2 style="text-align:center;">Continuous Learner</h2>
+   </section>
 
+   <section class="slide">
+     <img  src="softwareDeveloper.jpg" alt="Software Developer"/>
+     <h2 style="text-align:center;">Software Developer</h2>
+   </section>
+   
+   <section class="slide">
+     <img  src="father.jpg" alt="Father"/>
+     <h2 style="text-align:center;">Father</h2>
+   </section>
+   
+   <section class="slide">
+     <img  src="grandFather.jpg" alt="Grandfather"/>
+     <h2 style="text-align:center;">Grandfather</h2>
+   </section>
+   
+   <section class="slide">
+     <h1>What nodejs is not</h1>
+     <img  src="whatnodeJsIsNot.jpg" alt="What nodejs is not"/>     
+   </section>
+   
+   <section class="slide">
+     <img  src="HarbingerOfDeath.jpg" alt="Harbinger of Death"/>
+     <h2 style="text-align:center;">Harbinger of Death</h2>
+   </section>
+   
+   <section class="slide">
+     <img  src="mature.jpg" alt="Mature"/>
+     <h2 style="text-align:center;">Mature</h2>
+   </section>
+   
+   <section class="slide">
+     <img  src="stagnant.jpg" alt="Stagnant"/>
+     <h2 style="text-align:center;">Stagnant</h2>
+   </section>
+   
+   <section class="slide">
+     <img  src="wrongToolForJob.jpg" alt="Stagnant"/>
+     <h2 style="text-align:center;">The Tool for Every Job</h2>
+   </section>
+   
    <section class="slide" id="next-slide">
 	<h2>What is node.js</h2>
         <div>
@@ -46,7 +133,7 @@ Node is part of the Server Side JavaScript environnement and extends the JavaScr
 
 <p>
 Node was created by Ryan Dahl in February 2009 and has since become very popular. It&#39;s spirit is similar to <a href="http://twistedmatrix.com/trac/">Twisted</a> for Python and <a href="http://rubyeventmachine.com/">EventMachine</a> for Ruby.
-The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company employing Ryan Dahl) who lunched a cloud hosting service for node applications (<a href="https://no.de/">no.de</a>).
+The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company employing Ryan Dahl) who launched a cloud hosting service for node applications (<a href="https://no.de/">no.de</a>).
            </p>
          </div>
         <div style="float:right; width:30%">
@@ -81,21 +168,14 @@ The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company e
         <li class="slide">Can be written in C, C++ or javascript</li>
         <li class="slide">Supports CommonJS compatible modules</li>
      </ul>
-   </section>
-
-   <p class="deck-status">
-	<span class="deck-status-current"></span>
-	/
-	<span class="deck-status-total"></span>
-   </p>
+   </section>   
    <form action="." method="get" class="goto-form">
 	<label for="goto-slide">Go to slide:</label>
 	<input type="number" name="slidenum" id="goto-slide">
 	<input type="submit" value="Go">
    </form>
 
-   <a href="." title="Permalink to this slide" class="deck-permalink">#</a>
-
+   <a href="." title="Permalink to this slide" class="deck-permalink">#</a>   
    <script>window.jQuery || document.write('<script src="../lib/jquery-1.6.4.min.js"><\/script>')</script>
 
    <!-- Deck Core and extensions -->
