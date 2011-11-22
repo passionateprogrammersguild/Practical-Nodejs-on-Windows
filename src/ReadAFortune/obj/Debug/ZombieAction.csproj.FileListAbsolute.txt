@@ -1,7 +1,0 @@
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\bin\ZombieAction.dll
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\bin\ZombieAction.pdb
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\bin\System.Web.Razor.dll
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\bin\System.Web.Razor.xml
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\obj\Debug\ZombieAction.dll
-C:\Users\michael.mann\passionateprogrammersguild\Practical-Nodejs-on-Windows\src\ZombieAction\obj\Debug\ZombieAction.pdb

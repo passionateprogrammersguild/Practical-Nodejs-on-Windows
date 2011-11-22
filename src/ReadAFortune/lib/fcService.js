@@ -11,8 +11,11 @@ var fs = require("fs"),
     },
     readDataFromFile = function (fileName) {
         var cwd = process.cwd(),
-            fileToOpen = cwd.length > fileName.length ? cwd + '\\lib\\' + fileName : fileName;
-        
+            regex = /lib$/,
+            fileToOpen = regex.test(cwd) ? cwd + '\\' + fileName : cwd + '\\lib\\' + fileName;
+
+        console.log('regex test: ' + regex.test(cwd) + ' file path:' + fileToOpen);
+
         return fs.readFileSync(fileToOpen, 'utf8');
     },
     fortunes = parseFortunes(readDataFromFile('fortunes.txt'));
