@@ -75,11 +75,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\graphics\ajax-loader.gif" />
-    <Content Include="assets\graphics\Zombie.jpg" />
+    <Content Include="assets\graphics\city_wok.jpg" />
+    <Content Include="assets\styles\bubbletip.css" />
+    <Content Include="assets\scripts\jQuery.bubbletip-1.0.6.js" />
     <Content Include="assets\scripts\module.js" />
     <Content Include="assets\scripts\zombie.js" />
     <Content Include="assets\scripts\jquery-1.5.2.min.js" />
-    <Content Include="assets\graphics\styles\weather.css" />
     <Content Include="Global.asax" />
     <Content Include="lib\Web.config" />
     <None Include="views\home.cshtml" />

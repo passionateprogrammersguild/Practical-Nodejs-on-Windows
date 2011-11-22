@@ -8,10 +8,32 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:spec/f:fortune_cookie_spec.js" caret="0" fromTop="0" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:lib/f:Web.config" caret="93" fromTop="3" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/f:Web.config" caret="507" fromTop="12" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:lib/f:fcService.js" caret="564" fromTop="14" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:lib/f:fortuneCookie.js" caret="214" fromTop="5" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:spec/f:fortune_cookie_spec.js" caret="558" fromTop="13" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:module/f:FortuneCookieModule.cs" caret="481" fromTop="19" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1578" fromTop="10" />
     </RecentFiles>
     <RecentEdits>
-      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:spec/f:fortune_cookie_spec.js" caret="32" fromTop="1" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/f:Web.config" caret="573" fromTop="15" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:lib/f:Web.config" caret="93" fromTop="3" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/f:Web.config" caret="507" fromTop="12" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:lib/f:fcService.js" caret="564" fromTop="14" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:lib/f:fortuneCookie.js" caret="214" fromTop="5" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:spec/f:fortune_cookie_spec.js" caret="558" fromTop="13" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1988" fromTop="18" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="750" fromTop="10" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1002" fromTop="16" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="609" fromTop="14" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1915" fromTop="18" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1915" fromTop="20" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1915" fromTop="21" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1915" fromTop="23" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1752" fromTop="21" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1754" fromTop="18" />
+      <File id="4BA9CB83-4773-4C84-B33E-DDF46D0E1FAC/d:views/f:home.cshtml" caret="1381" fromTop="5" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

@@ -2,12 +2,64 @@
 <html>
 <head>
     <title>May I Take your a Fortune Cookie Order Prease</title>
-    <script language="javascript" type="text/javascript" src="/js/jquery-1.5.2.min.js"></script>    
+    <script language="javascript" type="text/javascript" src="/js/jquery-1.5.2.min.js"></script>
+    <script language="text/javascript"  type="text/javascript" src="js/jQuery.bubbletip-1.0.6.js"></script>
+    <link href="/style/bubbletip.css" rel="stylesheet" type="text/css" />
+    <style>
+        #fortune-nav
+        {
+            position:absolute;
+            bottom:0;
+            width:100%;
+        }
+        #fortune 
+        {
+            border-style:dotted;
+            border-color:#ff0000;
+        }
+    </style>
 </head>
 <body>
     <div>
-        <img src="/img/city_wok.jpg" style="display: block; margin: auto;" />
+        <img id="citywok" src="/img/city_wok.jpg" style="display: block; margin: left;" />
     </div>
-    <!--Click different parts of the zombie to get him to day something-->
+    <div id="bubble" style="display:none;position:relative;height:300px;width:100;">
+        <div id="welcome">
+            <h3>Welcome to City Wok</h3>
+            <p>
+                You look like you need a fortune cookie read for you.<br /> Your fortune cookie say:
+            </p>
+        </div>
+        <div id="fortune"></div>
+        <div id="fortune-nav"><span><a id="next-fortune" href="#">Next Fortune -></a></span></div>
+    </div>
+<script type="text/javascript">
+    $(window).bind('load', function () {
+        var getFortune = function (callback) {
+            var now = +(new Date);
+
+            $.ajax({
+                url: 'lib/fortuneCookie.js?cb=' + now,
+                success: function (data) {
+                    if (callback) {
+                        callback(data);
+                    }
+
+                    return data;
+                }
+            });
+        },
+        bindFortune = function (data) {
+            $('#fortune').html(data);
+        };
+
+        $('#citywok').bubbletip($('#bubble'), { deltaDirection: 'right' });
+        getFortune(bindFortune);
+
+        $('#next-fortune').click(function () {
+            getFortune(bindFortune);
+        });
+    });
+</script>
 </body>
 </html>
