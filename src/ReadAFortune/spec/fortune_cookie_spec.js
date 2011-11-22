@@ -4,7 +4,7 @@ describe("fortune cookie test suite", function () {
     describe("when getting the next fortune", function () {
         var fortune = fc.getNextFortune();
         it("should get a random fortune", function () {
-            expect(fortune).toBeDefined(0);
+            expect(fortune).toBeDefined();
         });
     });
     describe("when getting a fortune at an invalid index", function () {

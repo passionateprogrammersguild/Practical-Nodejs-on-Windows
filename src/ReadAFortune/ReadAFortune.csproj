@@ -135,7 +135,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <Target Name="run-js-tests" DependsOnTargets="CopyTestFilesToSpecFolder">
+  <Target Name="run-js-tests">
     <Exec Command="node $(JasmineHome)\jasmine-node --verbose spec" />
   </Target>
   <Target Name="CopyTestFilesToSpecFolder">

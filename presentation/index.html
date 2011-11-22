@@ -25,18 +25,25 @@
 	<link rel="stylesheet" href="../lib/extensions/status/deck.status.css">
 	<link rel="stylesheet" href="../lib/extensions/hash/deck.hash.css">
     <style>
-    #abount-me-footer {
+    #about-me-footer {
         position:absolute;
         bottom:0;
         width:100%;        
         height:120px;   /* Height of the footer */   
     }
     
-    #abount-me-footer div ul {
+    #about-me-footer div ul {
         list-style: none;
         margin-left: 0;
         padding-left: 1em;
         text-indent: -1em;
+    }
+    
+    #where-u-at {
+        position:absolute;
+        bottom:0;
+        width:100%;        
+        height:50px;
     }
     </style>
 	
@@ -53,14 +60,14 @@
    <section class="slide">
     <h2>Who am I</h2> 
     <div>     
-        <img  src="me.jpg" alt="Michael E. Mann"/>
+        <img  src="me.jpg" alt="Michael E. Mann" title="Michael E. Mann"/>
         <h3 style="text-align:center;">This is Me</h3>
     </div>
     <div style="margin-top:50px;">     
-        <img  src="meontwitter.jpg" alt="Michael E. Mann"/>
+        <img  src="meontwitter.jpg" alt="Michael E. Mann" title="Michael E. Mann"/>
         <h3 style="text-align:center;"><a href="https://twitter.com/#!/StarsUponTharz">@StarsUponTharz</a> on twitter</h3>
     </div>
-    <div id="abount-me-footer">
+    <div id="about-me-footer">
         <div style="float:left">
             <ul>
                 <li>Michael E. Mann</li>
@@ -79,47 +86,47 @@
     
    </section>
    <section class="slide">
-    <img  src="continuousLearner.jpg" alt="Continuous Learner"/>
+    <img  src="continuousLearner.jpg" alt="Continuous Learner" title="Continuous Learner"/>
     <h2 style="text-align:center;">Continuous Learner</h2>
    </section>
 
    <section class="slide">
-     <img  src="softwareDeveloper.jpg" alt="Software Developer"/>
+     <img  src="softwareDeveloper.jpg" alt="Software Developer" title="Software Developer"/>
      <h2 style="text-align:center;">Software Developer</h2>
    </section>
    
    <section class="slide">
-     <img  src="father.jpg" alt="Father"/>
+     <img  src="father.jpg" alt="Father" title="Father"/>
      <h2 style="text-align:center;">Father</h2>
    </section>
    
    <section class="slide">
-     <img  src="grandFather.jpg" alt="Grandfather"/>
+     <img  src="grandFather.jpg" alt="Grandfather" title="Grandfather"/>
      <h2 style="text-align:center;">Grandfather</h2>
    </section>
    
    <section class="slide">
      <h1>What nodejs is not</h1>
-     <img  src="whatnodeJsIsNot.jpg" alt="What nodejs is not"/>     
+     <img  src="whatnodeJsIsNot.jpg" alt="What nodejs is not" title="What nodejs is not"/>
    </section>
    
    <section class="slide">
-     <img  src="HarbingerOfDeath.jpg" alt="Harbinger of Death"/>
+     <img  src="HarbingerOfDeath.jpg" alt="Harbinger of Death" title="Harbinger of Death"/>
      <h2 style="text-align:center;">Harbinger of Death</h2>
    </section>
    
    <section class="slide">
-     <img  src="mature.jpg" alt="Mature"/>
+     <img  src="mature.jpg" alt="Mature" title="Mature"/>
      <h2 style="text-align:center;">Mature</h2>
    </section>
    
    <section class="slide">
-     <img  src="stagnant.jpg" alt="Stagnant"/>
+     <img  src="stagnant.jpg" alt="Stagnant" title="Stagnant"/>
      <h2 style="text-align:center;">Stagnant</h2>
    </section>
    
    <section class="slide">
-     <img  src="wrongToolForJob.jpg" alt="Stagnant"/>
+     <img src="wrongToolForJob.jpg" alt="Not the solution to all problems" title="Not the solution to all problems"/>
      <h2 style="text-align:center;">The Tool for Every Job</h2>
    </section>
    
@@ -144,38 +151,38 @@ The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company e
 
    <section class="slide" id="last-slide">
 	<h2>What are the building blocks of Node</h2>
-        <h3>Single Threaded</h3>
-	<ul>
-	   <li class="slide" id="extensions-goto">
-               Threads are complex programming constructs, and consume approximately 2mb per thread
-	   </li>
-           <li class="slide">
-              <a href="http://blog.webfaction.com/a-little-holiday-present">Benchmarks</a> have shown that single threaded evented I/O based platforms such as <a href="http://nginx.org/en/">ngenix</a> out-perform multi-threaded platforms such as <a href="http://httpd.apache.org/">apache</a>
-          </li>
-          <li class="slide">
-            Single threaded platforms leveraging <a href="http://en.wikipedia.org/wiki/Asynchronous_I/O">Evented I/O</a> or asynch I/O operations are optimal 
-          </li>
-       </ul>
-      <h3>Event Loop</h3>
+    <h3>Single Threaded</h3>
+    <ul>
+       <li>
+          Threads are complex programming constructs, and consume approximately 2mb per thread
+       </li>
+       <li>
+          <a href="http://blog.webfaction.com/a-little-holiday-present">Benchmarks</a> have shown that single threaded evented I/O based platforms such as <a href="http://nginx.org/en/">ngenix</a> out-perform multi-threaded platforms such as <a href="http://httpd.apache.org/">apache</a>
+       </li>
+       <li>
+            Used <a href="http://en.wikipedia.org/wiki/Asynchronous_I/O">Evented I/O</a> or asynch I/O for non-blocking calls
+       </li>
+    </ul>
+    <h3>Event Loop</h3>
       <ul>
-       <li class="slide">Asynch I/O programming model</li>
-       <li class="slide">Uses <a href="http://software.schmorp.de/pkg/libeio.html">libev</a> - A Unix event loop library</li>
-       <li class="slide">Uses <a href="https://github.com/joyent/libuv">libuv</a> - An abstraction over I/O Completion ports on windows and libev on Unix
+       <li>Asynch I/O programming model</li>
+       <li>Uses <a href="http://software.schmorp.de/pkg/libev.html">libev</a> - A Unix event loop library</li>
+       <li>Uses <a href="https://github.com/joyent/libuv">libuv</a> - An abstraction over I/O Completion ports on windows and libev on Unix
      </ul>
      <h3>The Module System</h3>
      <ul>
-        <li class="slide">Use npm to install and uninstall modules</li>
-        <li class="slide">Can be written in C, C++ or javascript</li>
-        <li class="slide">Supports CommonJS compatible modules</li>
+        <li>Use npm to install and uninstall modules</li>
+        <li>Can be written in C, C++ or javascript</li>
+        <li>Supports CommonJS compatible modules</li>
      </ul>
    </section>
    
    <section class="slide">
     <h2>Let's talk Node Modules</h2>
-    <img  src="npm-logo.png" alt="Lsts talk Node Modules"/>
+    <img  src="npm-logo.png" alt="Let's talk Node Modules" title="Let's talk Node Modules"/>
      <ul>
         <li class="slide">They are a way of extending the functionality of node</li>
-        <li class="slide">Use <code>var obj = require('jsFileNameWithoutExtension')</code> to import modules into your programs</li>
+        <li class="slide">Use <code>var obj = require('./jsFileNameWithoutExtension')</code> to import modules into your programs</li>
         <li class="slide">If no path specifier is used then search up directory tree until find a node_modules directory</li>
         <li class="slide">In module use <code>exports.functionName = function(){};</code> to make functions visible to consumer of module</li>
         <li class="slide">Can assign object directly to exports also <code>exports = new MyNewClass();</code></li>
@@ -187,41 +194,61 @@ The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company e
    <section class="slide">
    <h2>Node Hosting Solutions</h2>
      <ul>
-        <li class="slide">Joyent's <a href="https://no.de/">no.de service</a></li>
-        <li class="slide">Nodejitsu's <a href="http://nodejitsu.com/">Private Beta Cloud Offering </a></li>
-        <li class="slide">Heroku's <a href="http://devcenter.heroku.com/articles/node-js">Node.js on Cedar</a></li>
-        <li class="slide">Nodester's <a href="http://nodester.com/">Platform as a service</a></li>        
+        <li>Joyent's <a href="https://no.de/">no.de service</a></li>
+        <li>Nodejitsu's <a href="http://nodejitsu.com/">Private Beta Cloud Offering </a></li>
+        <li>Heroku's <a href="http://devcenter.heroku.com/articles/node-js">Node.js on Cedar</a></li>
+        <li>Nodester's <a href="http://nodester.com/">Platform as a service</a></li>        
      </ul>     
    </section>
    
    <section class="slide">    
-    <img  src="njsOnWindows.png" alt="Nodejs on Windows"/>
+    <img  src="njsOnWindows.png" alt="Nodejs on Windows" title="Nodejs on Windows"/>
      <ul>
-        <li class="slide"><a href="https://github.com/tjanczuk/iisnode">IISNode</a> allows you to run node.exe under IIS Infrastructure</li>
-        <li class="slide">Debugging experience on windows in IISNode is better with <a href="http://tomasz.janczuk.org/2011/11/debug-nodejs-applications-on-windows.html">node-inspector</a></li>
-        <li class="slide">Microsoft is promoting the use of node.js on <a href="http://ntotten.com/2011/08/nodejs-on-windows-azure/">Windows Azure</a></li>
-        <li class="slide"><a href="http://npmjs.org/doc/README.html#Installing-on-Windows-Experimental">NPM</a> works on Windows, but barely</li>
-     </ul>     
+        <li class="slide">On June 23, 2011 Joyent announces <a href="http://joyeur.com/2011/06/23/joyent-partners-with-ms-to-port-node-js-to-windows/">partnership with Microsoft to port node.js to Windows</a></li>
+        <li class="slide">On August 24, 2011 Microsoft promotes the use of node.js on <a href="http://ntotten.com/2011/08/nodejs-on-windows-azure/">Windows Azure</a></li>
+        <li class="slide">On August 25, 2011 Tomasz Janczuk writes an article <a href="http://tomasz.janczuk.org/2011/08/hosting-nodejs-applications-in-iis-on.html">Hosting node.js applications in IIS on Windows<a>
+        <li class="slide">On Nov 4, 2011 Tomasz Janczuk releases IISNode with <a href="https://twitter.com/#!/tjanczuk/status/132564206309486592">debugging support</a></li>
+        <li class="slide">On Nov 7, 2011 Microsoft annnounces <a href="http://blogs.msdn.com/b/interoperability/archive/2011/11/07/first-stable-build-of-nodejs-on-windows-released.aspx">First Stable Build of NodeJs on Windows Released</a></li>                        
+        <li class="slide"><a href="http://npmjs.org/doc/README.html#Installing-on-Windows-Experimental">Experimental npm</a> install on Windows</li>
+     </ul>
    </section>
    
    <section class="slide">
-     <img  src="scratchingHead.jpg" alt="So why did I choose node?"/>
+     <img  src="scratchingHead.jpg" alt="So why did I choose node?" title="So why did I choose node?"/>
      <h2 style="text-align:center;">So why did I choose node?</h2>
      <ul>
         <li class="slide">Need a way to test javascript for our js heavy applications</li>
-        <li class="slide">Enjoy using Jasmine (a javascript BDD testing framework)</li>
-        <li class="slide">Was able to use the jasmine-node module for testing my javascript in node</li>
         <li class="slide">Want tests to fail the build of the project</li>        
+        <li class="slide">Enjoy using Jasmine (a javascript BDD testing framework)</li>
+        <li class="slide">Was able to use the jasmine-node module for testing my javascript in node</li>        
      </ul>     
    </section>
    
    <section class="slide">
-     <img  src="demo.jpg" alt="Demo Time"/>
+     <img  src="demo.jpg" alt="Demo Time" title="Demo Time"/>
      <h2 style="text-align:center;">Its time for the Demo</h2>
    </section>
    
    <section class="slide">
-     <img  src="thankyou.jpg" alt="Thank you"/>     
+     <img  src="node-resources.png" alt="Node Resources" title="Nodejs Resources"/>     
+     <ul>
+        <li><a href="http://visionmedia.github.com/masteringnode/book.html">Mastering Node</a> on-line book</li>
+        <li>Scott Hansleman's article <a href="http://www.hanselman.com/blog/InstallingAndRunningNodejsApplicationsWithinIISOnWindowsAreYouMad.aspx">Installing and Running node.js applications within IIS on Windows - Are you mad?</a></li>
+        <li><a href="http://howtonode.org/">howtonode.org</a></li>
+        <li><a href="http://nodeguide.com/index.html">Felix's Node.js Guide</a></li>
+        <li><a href="http://nodetuts.com/">NODETUTS</a> a series of videos from the nettuts folks</li>
+        <li><a href="http://blog.nodejitsu.com/">nodejitsu blog</a></li>
+        <li><a href="http://tomasz.janczuk.org/2011/11/debug-nodejs-applications-on-windows.html">Debugging node.js applications on Windows</a></li>
+        <li>Jon Galloway's article <a href="http://weblogs.asp.net/jgalloway/archive/2011/10/26/using-node-js-in-an-asp-net-mvc-application-with-iisnode.aspx">Using Node.js in an ASP.NET MVC application with iisnode</a></li>
+        <li><a href="http://nodeup.com/">nodeup</a> a podcast from some of the maintainers of node.js</li>
+     </ul>     
+   </section>
+   
+   <section class="slide">
+     <img  src="thankyou.jpg" alt="Thank you" title="Thank you"/>
+     <div id="where-u-at">
+        <span>This presentation is on Github @ <a href="https://github.com/passionateprogrammersguild/Practical-Nodejs-on-Windows">https://github.com/passionateprogrammersguild/Practical-Nodejs-on-Windows</a></span>
+     </div>
    </section>
    <form action="." method="get" class="goto-form">
 	<label for="goto-slide">Go to slide:</label>
