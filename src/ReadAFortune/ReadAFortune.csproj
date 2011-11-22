@@ -76,15 +76,13 @@
   <ItemGroup>
     <Content Include="assets\graphics\ajax-loader.gif" />
     <Content Include="assets\graphics\city_wok.jpg" />
+    <Content Include="assets\graphics\fortune-cookie.jpg" />
     <Content Include="assets\styles\bubbletip.css" />
     <Content Include="assets\scripts\jQuery.bubbletip-1.0.6.js" />
-    <Content Include="assets\scripts\module.js" />
-    <Content Include="assets\scripts\zombie.js" />
     <Content Include="assets\scripts\jquery-1.5.2.min.js" />
     <Content Include="Global.asax" />
     <Content Include="lib\Web.config" />
     <None Include="views\home.cshtml" />
-    <Content Include="assets\scripts\FortuneCookie.js" />
     <Content Include="lib\fcService.js" />
     <Content Include="lib\fortuneCookie.js" />
     <Content Include="lib\fortunes.txt" />

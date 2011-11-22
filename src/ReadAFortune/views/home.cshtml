@@ -17,21 +17,35 @@
             border-style:dotted;
             border-color:#ff0000;
         }
+        #title 
+        {
+            display: block;
+            font-size: 1.17em;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div>
         <img id="citywok" src="/img/city_wok.jpg" style="display: block; margin: left;" />
     </div>
-    <div id="bubble" style="display:none;position:relative;height:300px;width:100;">
+    <div id="bubble" style="display:none;height:400px;width:100;">
         <div id="welcome">
-            <h3>Welcome to City Wok</h3>
+            <h3 id="title">Welcome to City Wok</h3>
             <p>
-                You look like you need a fortune cookie read for you.<br /> Your fortune cookie say:
+                You look like you need a fortune cookie read for you.<br /> 
+                Click the fortune cookie to see your futua
             </p>
-        </div>
-        <div id="fortune"></div>
-        <div id="fortune-nav"><span><a id="next-fortune" href="#">Next Fortune -></a></span></div>
+        </div>               
+        
+        <div id="fortune-cookie">
+            <img src="/img/fortune-cookie.jpg" alt="Click to receive a new fortune" title="Click to receive a new fortune"/>
+        </div>        
+        <div id="fortune"></div>        
     </div>
 <script type="text/javascript">
     $(window).bind('load', function () {
@@ -56,7 +70,7 @@
         $('#citywok').bubbletip($('#bubble'), { deltaDirection: 'right' });
         getFortune(bindFortune);
 
-        $('#next-fortune').click(function () {
+        $('#fortune-cookie').click(function () {
             getFortune(bindFortune);
         });
     });
