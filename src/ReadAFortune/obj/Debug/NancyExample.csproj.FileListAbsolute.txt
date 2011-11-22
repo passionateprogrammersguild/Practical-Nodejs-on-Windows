@@ -1,0 +1,33 @@
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\NancyExample.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\NancyExample.pdb
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.Authentication.Forms.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.Hosting.Aspnet.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.ViewEngines.Razor.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.ViewEngines.Spark.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Spark.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\System.Web.Razor.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\obj\Debug\ResolveAssemblyReference.cache
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\obj\Debug\NancyExample.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\obj\Debug\NancyExample.pdb
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Weather.dll
+F:\STL ALT.NET\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Weather.pdb
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\NancyExample.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\NancyExample.pdb
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.Authentication.Forms.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.Hosting.Aspnet.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.ViewEngine.Markdown.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.ViewEngines.Razor.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.ViewEngines.Spark.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Spark.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\System.Web.Razor.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Weather.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\MarkdownSharp.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Nancy.ViewEngine.Markdown.pdb
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\Weather.pdb
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\MarkdownSharp.pdb
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\bin\MarkdownSharp.xml
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\obj\Debug\NancyExample.dll
+C:\Users\michael.mann\Downloads\20110427 Micro Web Frameworks\20110427 Micro Web Frameworks\NancyExample\NancyExample\obj\Debug\NancyExample.pdb
