@@ -168,7 +168,61 @@ The project is run by <a href="http://www.joyent.com/">Joyent</a> (the company e
         <li class="slide">Can be written in C, C++ or javascript</li>
         <li class="slide">Supports CommonJS compatible modules</li>
      </ul>
-   </section>   
+   </section>
+   
+   <section class="slide">
+    <h2>Let's talk Node Modules</h2>
+    <img  src="npm-logo.png" alt="Lsts talk Node Modules"/>
+     <ul>
+        <li class="slide">They are a way of extending the functionality of node</li>
+        <li class="slide">Use <code>var obj = require('jsFileNameWithoutExtension')</code> to import modules into your programs</li>
+        <li class="slide">If no path specifier is used then search up directory tree until find a node_modules directory</li>
+        <li class="slide">In module use <code>exports.functionName = function(){};</code> to make functions visible to consumer of module</li>
+        <li class="slide">Can assign object directly to exports also <code>exports = new MyNewClass();</code></li>
+        <li class="slide">Thousands of modules can be found on <a href="http://search.npmjs.org/">http://search.npmjs.org/</a></li>
+        <li class="slide">Install modules easily with <code>npm install module-name</code></li>
+     </ul>     
+   </section>
+   
+   <section class="slide">
+   <h2>Node Hosting Solutions</h2>
+     <ul>
+        <li class="slide">Joyent's <a href="https://no.de/">no.de service</a></li>
+        <li class="slide">Nodejitsu's <a href="http://nodejitsu.com/">Private Beta Cloud Offering </a></li>
+        <li class="slide">Heroku's <a href="http://devcenter.heroku.com/articles/node-js">Node.js on Cedar</a></li>
+        <li class="slide">Nodester's <a href="http://nodester.com/">Platform as a service</a></li>        
+     </ul>     
+   </section>
+   
+   <section class="slide">    
+    <img  src="njsOnWindows.png" alt="Nodejs on Windows"/>
+     <ul>
+        <li class="slide"><a href="https://github.com/tjanczuk/iisnode">IISNode</a> allows you to run node.exe under IIS Infrastructure</li>
+        <li class="slide">Debugging experience on windows in IISNode is better with <a href="http://tomasz.janczuk.org/2011/11/debug-nodejs-applications-on-windows.html">node-inspector</a></li>
+        <li class="slide">Microsoft is promoting the use of node.js on <a href="http://ntotten.com/2011/08/nodejs-on-windows-azure/">Windows Azure</a></li>
+        <li class="slide"><a href="http://npmjs.org/doc/README.html#Installing-on-Windows-Experimental">NPM</a> works on Windows, but barely</li>
+     </ul>     
+   </section>
+   
+   <section class="slide">
+     <img  src="scratchingHead.jpg" alt="So why did I choose node?"/>
+     <h2 style="text-align:center;">So why did I choose node?</h2>
+     <ul>
+        <li class="slide">Need a way to test javascript for our js heavy applications</li>
+        <li class="slide">Enjoy using Jasmine (a javascript BDD testing framework)</li>
+        <li class="slide">Was able to use the jasmine-node module for testing my javascript in node</li>
+        <li class="slide">Want tests to fail the build of the project</li>        
+     </ul>     
+   </section>
+   
+   <section class="slide">
+     <img  src="demo.jpg" alt="Demo Time"/>
+     <h2 style="text-align:center;">Its time for the Demo</h2>
+   </section>
+   
+   <section class="slide">
+     <img  src="thankyou.jpg" alt="Thank you"/>     
+   </section>
    <form action="." method="get" class="goto-form">
 	<label for="goto-slide">Go to slide:</label>
 	<input type="number" name="slidenum" id="goto-slide">
